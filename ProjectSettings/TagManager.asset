@@ -7,6 +7,9 @@ TagManager:
   - Anchor
   - seed
   - pine
+  - Seed1
+  - Seed2
+  - Seed3
   layers:
   - Default
   - TransparentFX
