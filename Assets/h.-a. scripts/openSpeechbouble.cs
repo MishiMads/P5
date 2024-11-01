@@ -9,7 +9,8 @@ public class openSpeechbouble : MonoBehaviour
     public Dialogue dialogue;
     public string[] Replilk;
     public UIFloat uifloat;
-
+    public patrol Patrol;
+    
     public Transform ThisTarget;
     
    private void OnTriggerEnter(Collider other)
@@ -17,6 +18,7 @@ public class openSpeechbouble : MonoBehaviour
         //Debug.Log("collision");
         if (other.gameObject.CompareTag("Player"))
         {
+            Patrol.stopAndLook(other.gameObject);
             Debug.Log("player entered");
             StartCoroutine(HandleDialogue());
         }
@@ -28,6 +30,7 @@ public class openSpeechbouble : MonoBehaviour
         {
             Debug.Log("play left");
             speech.gameObject.SetActive(false);
+            Patrol.resume();
         }
     }
 
