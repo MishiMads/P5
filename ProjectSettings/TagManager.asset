@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Anchor
   - seed
+  - pine
+<<<<<<< Updated upstream
+  - Seed1
+  - Seed2
+  - Seed3
+=======
+  - player
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
